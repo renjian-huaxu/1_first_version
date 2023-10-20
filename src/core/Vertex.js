@@ -2,7 +2,7 @@ import Vector3 from "./Vector3";
 
 export default class Vertex {
 
-    __visible = true;
+    // __visible = true;
 
     constructor(position, normal) {
         this.position = position || new Vector3();

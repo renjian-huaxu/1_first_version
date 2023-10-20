@@ -12,20 +12,18 @@ export default class Geometry {
     }
 
     computeNormals() {
-        var vA, vB, vC, cb, ab, normal;
-
 		this.vertices.forEach(vertex => {
 			vertex.normal.set(0, 0, 0)
 		})
 
 		this.faces.forEach(face => {
-			vA = this.vertices[ face.a ];
-			vB = this.vertices[ face.b ];
-			vC = this.vertices[ face.c ];
+			const vA = this.vertices[ face.a ];
+			const vB = this.vertices[ face.b ];
+			const vC = this.vertices[ face.c ];
 
-			cb = new Vector3();
-			ab = new Vector3();
-			normal = new Vector3();
+			const cb = new Vector3();
+			const ab = new Vector3();
+			const normal = new Vector3();
 
 			cb.sub( vC.position, vB.position );
 			ab.sub( vA.position, vB.position );
