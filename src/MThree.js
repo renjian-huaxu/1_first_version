@@ -13,7 +13,6 @@ import Camera from "./cameras/Camera";
 
 import Object3D from "./objects/Object3D";
 import Mesh from "./objects/Mesh";
-import Particle from "./objects/Particle";
 
 import MeshColorFillMaterial from "./materials/MeshColorFillMaterial";
 import MeshFaceColorFillMaterial from "./materials/MeshFaceColorFillMaterial";
@@ -43,7 +42,6 @@ export default {
 
     Object3D,
     Mesh,
-    Particle,
 
     MeshColorFillMaterial,
     MeshFaceColorFillMaterial,
