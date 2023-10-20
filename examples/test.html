@@ -30,7 +30,7 @@
 			document.addEventListener('mousemove', onDocumentMouseMove, false);
             init();
 			loop();
-			// setInterval(loop, 1000/60);
+			setInterval(loop, 1000/60);
 
             function init() {
                 container = document.createElement('div');
@@ -57,27 +57,29 @@
 				// mesh.updateMatrix();
 				// scene.add(mesh);
 
-				mesh = new MThree.Mesh( new MThree.Plane( 100, 100 ) );
-				mesh.position.y = 0;
-				mesh.scale.x = mesh.scale.y = mesh.scale.z = 2;
-				mesh.doubleSided = true;
-				mesh.updateMatrix();
-				scene.add(mesh);
+				// mesh = new MThree.Mesh( new MThree.Plane( 100, 100 ) );
+				// mesh.position.y = 0;
+				// mesh.scale.x = mesh.scale.y = mesh.scale.z = 2;
+				// mesh.doubleSided = true;
+				// mesh.updateMatrix();
+				// scene.add(mesh);
 
 
 
-				// CUBES
 
-				var cube = new MThree.Cube(100, 100, 100);
+				// // CUBES
 
-				mesh = new MThree.Mesh( cube, new MThree.MeshColorFillMaterial( 0x0000ff, 0.5 ) );
-				// mesh = new MThree.Mesh( cube );
-				mesh.position.x = 300;
-				mesh.rotation.x = Math.random();
-				mesh.rotation.y = Math.random();
-				mesh.scale.x = mesh.scale.y = mesh.scale.z = 2;
-				mesh.updateMatrix();
-				scene.add(mesh);
+				// var cube = new MThree.Cube(100, 100, 100);
+
+				// mesh = new MThree.Mesh( cube, new MThree.MeshColorFillMaterial( 0x0000ff, 0.5 ) );
+				// // mesh = new MThree.Mesh( cube );
+				// mesh.position.x = 300;
+				// mesh.rotation.x = Math.random();
+				// mesh.rotation.y = Math.random();
+				// mesh.scale.x = mesh.scale.y = mesh.scale.z = 2;
+				// mesh.updateMatrix();
+				// scene.add(mesh);
+
 
 
 				
@@ -85,19 +87,24 @@
 				// CYLINDER
 
 				// mesh = new MThree.Mesh( new MThree.Cylinder( 10, 20, 100, 200, - 50, - 20 ), new MThree.MeshColorFillMaterial( Math.random() * 0xffffff ) );
-				// mesh.position.x = -500;
-				// mesh.scale.x = mesh.scale.y = mesh.scale.z = 2;
+				// mesh.position.x = -100;
 				// mesh.updateMatrix();
 				// scene.add(mesh);
+
+				// mesh = new MThree.Mesh( new MThree.Cylinder( 10, 20, 100, 200, - 50, - 20 ), new MThree.MeshFaceColorFillMaterial( Math.random() * 0xffffff ) );
+				// mesh.position.x = -100;
+				// mesh.updateMatrix();
+				// scene.add(mesh);
+
 
 
 
 				// QRCODE
 
-				// mesh = new MThree.Mesh(new Qrcode(), new MThree.MeshFaceColorFillMaterial());
-				// mesh.scale.x = mesh.scale.y = mesh.scale.z = 2;
-				// mesh.updateMatrix();
-				// scene.add(mesh);
+				mesh = new MThree.Mesh(new Qrcode(), new MThree.MeshFaceColorFillMaterial());
+				mesh.scale.x = mesh.scale.y = mesh.scale.z = 1;
+				mesh.updateMatrix();
+				scene.add(mesh);
 				
 
 

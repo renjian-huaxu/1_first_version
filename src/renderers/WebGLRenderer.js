@@ -126,7 +126,7 @@ export default class WebGLRenderer {
 				_gl.vertexAttribPointer( _program.color, 4, _gl.FLOAT, false, 0, 0 );
 
 
-				object.material.forEach(material => {
+				object.materials.forEach(material => {
 					
 					if ( material instanceof MeshColorFillMaterial ) {
 

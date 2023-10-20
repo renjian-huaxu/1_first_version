@@ -2,8 +2,8 @@ import Object3D from "./Object3D";
 
 export default class Mesh extends Object3D {
 
-    constructor(geometry, material) {
-        super(material)
+    constructor(geometry, materials) {
+        super(materials)
 
         this.geometry = geometry;
 

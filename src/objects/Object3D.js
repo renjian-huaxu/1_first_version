@@ -4,7 +4,7 @@ import Matrix4 from '../core/Matrix4'
 
 export default class Object3D {
 
-    constructor(material) {
+    constructor(materials) {
         this.position = new Vector3()
         this.rotation = new Vector3()
         this.scale = new Vector3(1, 1, 1)
@@ -12,8 +12,8 @@ export default class Object3D {
         this.matrix = new Matrix4()
         this.screen = new Vector3()
 
-        this.material = material ? 
-                            material instanceof Array ? material : [material]
+        this.materials = materials ? 
+                            materials instanceof Array ? materials : [materials]
                              : []
         this.autoUpdateMatrix = true;
     }
