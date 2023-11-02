@@ -4,6 +4,7 @@ import Vector3 from "../core/Vector3";
 export default class Camera {
 
 	constructor(fov, aspect, near, far) {
+		
 		this.position = new Vector3(0, 0, 0)
 		this.target = { position: new Vector3(0, 0, 0) }
 		this.projectionMatrix = Matrix4.makePerspective(fov, aspect, near, far)

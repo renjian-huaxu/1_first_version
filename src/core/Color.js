@@ -25,7 +25,9 @@ export default class Color {
     }
 
     updateHex() {
-        this.hex = Math.floor( this.a * 255 ) << 24 | Math.floor( this.r * 255 ) << 16 | Math.floor( this.g * 255 ) << 8 | Math.floor( this.b * 255 );
+        this.hex = Math.floor( this.a * 255 ) << 24 
+            | Math.floor( this.r * 255 ) << 16 
+            | Math.floor( this.g * 255 ) << 8 | Math.floor( this.b * 255 );
     }
 
     updateRGBA() {
@@ -37,7 +39,10 @@ export default class Color {
     }
 
     updateStyleString() {
-        this.__styleString = 'rgba(' + Math.floor( this.r * 255 ) + ',' + Math.floor( this.g * 255 ) + ',' + Math.floor( this.b * 255 ) + ',' + this.a + ')';
+        this.__styleString = 'rgba(' 
+            + Math.floor( this.r * 255 ) + ',' 
+            + Math.floor( this.g * 255 ) + ',' 
+            + Math.floor( this.b * 255 ) + ',' + this.a + ')';
     }
 
     toString() {

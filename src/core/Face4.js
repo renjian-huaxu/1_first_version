@@ -4,6 +4,7 @@ import Vector3 from "./Vector3";
 export default class Face4 {
 
     constructor(a, b, c, d, normal, color) {
+        
         this.a = a;
         this.b = b;
         this.c = c;

@@ -45,7 +45,7 @@
 
 
                 mesh = new MThree.Mesh( new MThree.Plane( 100, 100 ), new MThree.MeshColorFillMaterial( Math.random() * 0xffffff ) );
-				mesh.position.x = -400;
+				mesh.position.x = 0;
 				mesh.scale.x = mesh.scale.y = mesh.scale.z = 2;
 				mesh.doubleSided = true;
 				mesh.updateMatrix();
@@ -88,7 +88,8 @@
 				// CYLINDER
 
 				mesh = new MThree.Mesh( new MThree.Cylinder( 10, 20, 100, 200, - 50, - 20 ), new MThree.MeshColorFillMaterial( Math.random() * 0xffffff ) );
-				mesh.position.x = -100;
+				mesh.position.x = 0;
+				mesh.position.z = -100;
 				mesh.updateMatrix();
 				scene.add(mesh);
 

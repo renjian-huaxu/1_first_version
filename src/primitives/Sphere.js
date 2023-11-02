@@ -7,10 +7,11 @@ import Vertex from "../core/Vertex";
 export default class Sphere extends Geometry {
 
     constructor(radius, segments_width, segments_height) {
+
         super()
 
         var gridX = segments_width || 8,
-        gridY = segments_height || 6;
+            gridY = segments_height || 6;
     
         var i, j;
         var iHor = Math.max( 3, gridX );

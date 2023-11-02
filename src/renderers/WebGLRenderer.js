@@ -5,7 +5,9 @@ import MeshColorFillMaterial from "../materials/MeshColorFillMaterial";
 import MeshFaceColorFillMaterial from "../materials/MeshFaceColorFillMaterial";
 import Mesh from "../objects/Mesh";
 
-var _canvas = document.createElement( 'canvas' ), _gl, _program,
+var _canvas = document.createElement( 'canvas' ), 
+_gl, 
+_program,
 viewMatrix = new Matrix4();
 
 export default class WebGLRenderer {
@@ -31,7 +33,7 @@ export default class WebGLRenderer {
 
         if ( this.autoClear ) {
 
-			this.clear();
+			// this.clear();
 
 		}
 
@@ -178,15 +180,12 @@ export default class WebGLRenderer {
 
 		}
 
-		_gl.clearColor( 0, 0, 0, 1 );
-		_gl.clearDepth( 1 );
+		// _gl.clearColor( 0, 0, 0, 1 );
+		// _gl.clearDepth( 1 );
 
 		_gl.enable( _gl.DEPTH_TEST );
 		_gl.depthFunc( _gl.LEQUAL );
 
-		_gl.enable( _gl.BLEND );
-		_gl.blendFunc( _gl.SRC_ALPHA, _gl.ONE_MINUS_SRC_ALPHA );
-		// _gl.blendFunc( _gl.SRC_ALPHA, _gl.ONE ); // cool!
 		_gl.clearColor( 0, 0, 0, 0 );
     }
 

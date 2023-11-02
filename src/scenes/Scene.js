@@ -8,7 +8,9 @@ export default class Scene {
     }
 
     addObject(object) {
+
         this.objects.push(object);
+
     }
 
     removeObject(object) {
@@ -17,14 +19,14 @@ export default class Scene {
 			if ( object == this.objects[ i ] ) {
 
 				this.objects.splice( i, 1 );
-				return;
-
 			}
 		}
     }
 
     add(object) {
+
         this.addObject( object );
+
     }
 
     toString() {

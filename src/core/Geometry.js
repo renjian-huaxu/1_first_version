@@ -12,11 +12,13 @@ export default class Geometry {
     }
 
     computeNormals() {
+
 		this.vertices.forEach(vertex => {
 			vertex.normal.set(0, 0, 0)
 		})
 
 		this.faces.forEach(face => {
+			
 			const vA = this.vertices[ face.a ];
 			const vB = this.vertices[ face.b ];
 			const vC = this.vertices[ face.c ];
