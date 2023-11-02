@@ -87,13 +87,15 @@
 				
 				// CYLINDER
 
-				mesh = new MThree.Mesh( new MThree.Cylinder( 10, 20, 100, 200, - 50, - 20 ), new MThree.MeshColorFillMaterial( Math.random() * 0xffffff ) );
+				mesh = new MThree.Mesh( new MThree.Cylinder( 10, 20, 100, 200, - 50, - 20 ), 
+										new MThree.MeshColorFillMaterial( Math.random() * 0xffffff ) );
 				mesh.position.x = 0;
 				mesh.position.z = -100;
 				mesh.updateMatrix();
 				scene.add(mesh);
 
-				mesh = new MThree.Mesh( new MThree.Cylinder( 10, 20, 100, 200, - 50, - 20 ), new MThree.MeshFaceColorFillMaterial( Math.random() * 0xffffff ) );
+				mesh = new MThree.Mesh( new MThree.Cylinder( 10, 20, 100, 200, - 50, - 20 ), 
+										new MThree.MeshFaceColorFillMaterial( Math.random() * 0xffffff ) );
 				mesh.position.y = -200;
 				mesh.updateMatrix();
 				scene.add(mesh);
